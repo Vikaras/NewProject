@@ -6,6 +6,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
   width: 1600px;
   min-height: 100%;
   position: relative;
@@ -19,9 +20,52 @@ ul {
 a {
   text-decoration: none; }
 
+h1 {
+  margin-top: 0; }
+
 .container {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto; }
+
+#header-nav {
+  position: fixed;
+  height: 168px;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.2); }
+  #header-nav .company-logo {
+    float: left;
+    font-size: 50px;
+    line-height: 60px;
+    font-family: 'Damion', cursive;
+    color: #fff;
+    margin-top: 15px; }
+  #header-nav .company-logo::after {
+    content: '';
+    display: block;
+    clear: both; }
+  #header-nav .nav-list {
+    float: right; }
+    #header-nav .nav-list .nav-list::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #header-nav .nav-list .nav-list-item {
+      margin-top: 42px;
+      display: inline-block; }
+    #header-nav .nav-list .nav-list-link {
+      color: #fff;
+      padding: 42px 30px 22px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px; }
+    #header-nav .nav-list .nav-list-link:hover {
+      background: #74c7d5;
+      transition: .3s; }
+
+#hero .hero-cover {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block; }
 
 /*# sourceMappingURL=style.css.map */

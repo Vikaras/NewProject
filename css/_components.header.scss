@@ -1,0 +1,49 @@
+#header-nav {
+  position: fixed;
+  height: 168px;
+  width: 100%;
+  background: rgba(0, 0, 0, .2);
+
+  .company-logo {
+    float: left;
+    font-size: 50px;
+    line-height: 60px;
+    font-family: 'Damion', cursive;
+    color: $text-color;
+    margin-top: 15px;
+  }
+
+  .company-logo::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  .nav-list {
+    float: right;
+
+    .nav-list::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .nav-list-item {
+      margin-top: 42px;
+      display: inline-block;
+    }
+
+    .nav-list-link {
+      color: $text-color;
+      padding: 42px 30px 22px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+
+    .nav-list-link:hover {
+      background: #74c7d5;
+      transition: .3s;
+    }
+
+  }
+}
