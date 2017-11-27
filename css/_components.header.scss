@@ -3,6 +3,7 @@
   height: 168px;
   width: 100%;
   background: rgba(0, 0, 0, .2);
+  z-index: 10;
 
   .company-logo {
     float: left;
@@ -29,13 +30,13 @@
     }
 
     .nav-list-item {
-      margin-top: 42px;
+      margin: 42px 5px 0;
       display: inline-block;
     }
 
     .nav-list-link {
       color: $text-color;
-      padding: 42px 30px 22px;
+      padding: 42px 25px 22px;
       border-bottom-left-radius: 5px;
       border-bottom-right-radius: 5px;
     }
