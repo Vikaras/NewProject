@@ -23,10 +23,28 @@ h1 {
   margin: 0;
   color: #74c7d5; }
 
+h2 {
+  margin: 0; }
+
 .container {
   max-width: 1100px;
   width: 100%;
   margin: 0 auto; }
+
+.heading {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 58px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.paragraph {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center; }
 
 #header-nav {
   position: fixed;
@@ -95,5 +113,83 @@ h1 {
       content: '';
       display: block;
       clear: both; }
+
+#service {
+  position: relative;
+  background: #b24a50 url("../img/services-layer.png") no-repeat top center;
+  background-size: cover;
+  padding: 190px 0 124px; }
+  #service .column {
+    background: #c45158; }
+  #service .service-text-wrap .service-heading {
+    margin-bottom: 46px; }
+  #service .service-text-wrap .service-text {
+    color: #ffffff;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 58px;
+    text-align: center; }
+  #service .service-text-wrap .service-text-link {
+    color: #ec9da2; }
+  #service .service-text-wrap .service-paragraph {
+    margin-bottom: 120px; }
+  #service .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center; }
+    #service .row .column + .column {
+      margin-left: 2%; }
+    #service .row .column {
+      width: 23.5%;
+      border-radius: 5px; }
+      #service .row .column .service-wrap {
+        position: relative;
+        background: #ffffff;
+        height: 120px;
+        width: 120px;
+        margin: 54px auto 34px;
+        border-radius: 50%;
+        text-align: center;
+        border: 5px solid #df5c64;
+        z-index: 10; }
+        #service .row .column .service-wrap::before {
+          content: '';
+          position: absolute;
+          z-index: -1;
+          height: 120px;
+          width: 120px;
+          top: -10px;
+          left: -10px;
+          border: 5px solid #fff;
+          border-radius: 50%; }
+        #service .row .column .service-wrap .fa-lightbulb-o {
+          font-size: 69px;
+          color: #df5c64;
+          line-height: 110px; }
+        #service .row .column .service-wrap .fa-magic {
+          font-size: 65px;
+          color: #df5c64;
+          line-height: 110px; }
+        #service .row .column .service-wrap .fa-cogs {
+          font-size: 70px;
+          color: #df5c64;
+          line-height: 110px; }
+        #service .row .column .service-wrap .fa-rocket {
+          font-size: 64px;
+          color: #df5c64;
+          line-height: 110px; }
+      #service .row .column .service-feature-heading {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 300;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 51px; }
+      #service .row .column .service-paragraph {
+        margin-bottom: 43px;
+        padding: 0 26px; }
 
 /*# sourceMappingURL=style.css.map */
