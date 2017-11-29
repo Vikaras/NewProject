@@ -26,6 +26,9 @@ h1 {
 h2 {
   margin: 0; }
 
+p {
+  margin: 0; }
+
 .container {
   max-width: 1100px;
   width: 100%;
@@ -200,5 +203,9 @@ h2 {
   background: #665464 url("../img/about-layer.png") no-repeat top center;
   background-size: cover;
   padding: 202px 0 112px; }
+  #about .about-text-wrap .about-heading {
+    margin-bottom: 34px; }
+  #about .about-text-wrap .about-paragraph {
+    margin-bottom: 59px; }
 
 /*# sourceMappingURL=style.css.map */
