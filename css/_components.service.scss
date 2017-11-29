@@ -4,7 +4,7 @@
   background-size: cover;
   padding: 190px 0 124px;
 
-  .column {
+  .service-column {
     background: #c45158;
   }
 
@@ -31,21 +31,9 @@
     }
   }
 
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+  .service-row {
 
-    .column + .column {
-      margin-left: 2%;
-    }
-
-    .column {
-      width: 23.5%;
-      border-radius: 5px;
+    .service-column {
 
       .service-wrap {
         position: relative;
