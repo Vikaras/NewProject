@@ -42,4 +42,33 @@
       }
     }
 
+    .about-row {
+
+      .about-column {
+        background: #5d4c5b;
+
+        .about-wrap {
+          margin: 43px 0 26px;
+          text-align: center;
+        }
+
+        .member-heading {
+          text-align: center;
+          font-size: 25px;
+          font-weight: 700;
+          color: #c7b6c5;
+          text-transform: uppercase;
+          margin-bottom: 13px;
+        }
+
+        .member-paragraph {
+          font-size: 14px;
+          text-align: center;
+          color: #a1ca6c;
+          margin-bottom: 37px;
+        }
+      }
+
+    }
+
 }
