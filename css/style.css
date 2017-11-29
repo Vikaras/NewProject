@@ -195,4 +195,10 @@ h2 {
     margin-bottom: 43px;
     padding: 0 26px; }
 
+#about {
+  position: relative;
+  background: #665464 url("../img/about-layer.png") no-repeat top center;
+  background-size: cover;
+  padding: 202px 0 112px; }
+
 /*# sourceMappingURL=style.css.map */
