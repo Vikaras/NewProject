@@ -292,5 +292,40 @@ p {
   #gallery .gallery-text-wrap .gallery-paragraph {
     padding-bottom: 58px;
     border-bottom: 1px solid #94b963; }
+  #gallery .portfolio-wrap {
+    border-bottom: 1px solid #94b963;
+    padding: 42px 0; }
+    #gallery .portfolio-wrap .portfolio-text {
+      float: left;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase; }
+      #gallery .portfolio-wrap .portfolio-text::after {
+        content: '';
+        display: block;
+        clear: both; }
+    #gallery .portfolio-wrap .portfolio-list {
+      float: right; }
+      #gallery .portfolio-wrap .portfolio-list::after {
+        content: '';
+        display: block;
+        clear: both; }
+      #gallery .portfolio-wrap .portfolio-list .portfolio-list-item {
+        display: inline-block;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 24px;
+        color: #ffffff;
+        padding: 13px 10px;
+        margin: 0 16px;
+        transition: background-color .3s; }
+        #gallery .portfolio-wrap .portfolio-list .portfolio-list-item::after {
+          content: '';
+          display: block;
+          clear: both; }
+        #gallery .portfolio-wrap .portfolio-list .portfolio-list-item:hover {
+          background: #f5c149; }
 
 /*# sourceMappingURL=style.css.map */
