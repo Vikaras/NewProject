@@ -207,5 +207,29 @@ p {
     margin-bottom: 34px; }
   #about .about-text-wrap .about-paragraph {
     margin-bottom: 59px; }
+  #about .about-text-wrap .about-team {
+    position: relative;
+    margin: 0 auto;
+    width: 276px;
+    height: 50px;
+    background: #a1ca6c;
+    color: #ffffff;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 68px; }
+    #about .about-text-wrap .about-team::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-top: 15px solid #a1ca6c;
+      bottom: -15px;
+      left: 121px; }
 
 /*# sourceMappingURL=style.css.map */
