@@ -46,6 +46,16 @@
 
       .about-column {
         background: #5d4c5b;
+        transition: background-color .3s;
+        &:hover {
+          .member-heading {
+            color: #ffffff;
+          }
+          .member-paragraph {
+            color: #ff8973;
+          }
+          background: #544452;
+        }
 
         .about-wrap {
           margin: 43px 0 26px;
@@ -66,6 +76,41 @@
           text-align: center;
           color: #a1ca6c;
           margin-bottom: 37px;
+        }
+
+        .social-member-list {
+          text-align: center;
+
+          .social-member-list-item{
+            margin: 0 10px 32px;
+            display: inline-block;
+            &:hover {
+              .facebook {
+                background: #4f689e;
+              }
+              .twitter {
+                background: #74c7d5;
+              }
+              .google {
+                background: #df5c64;
+              }
+              .linkedin {
+                background: #3e61af;
+              }
+            }
+          }
+
+          .social-member-list-link {
+            display: block;
+            color: #ffffff;
+            line-height: 32px;
+            width: 32px;
+            height: 32px;
+            background: #a1859e;
+            border-radius: 50%;
+            font-size: 16px;
+            transition: background-color .3s;
+          }
         }
       }
 

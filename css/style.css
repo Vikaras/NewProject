@@ -14,7 +14,8 @@ body {
 ul {
   margin: 0;
   padding: 0;
-  list-style: none; }
+  list-style: none;
+  font-size: 0; }
 
 a {
   text-decoration: none; }
@@ -92,7 +93,8 @@ p {
       clear: both; }
     #header-nav .nav-list .nav-list-item {
       margin: 42px 5px 0;
-      display: inline-block; }
+      display: inline-block;
+      font-size: 18px; }
     #header-nav .nav-list .nav-list-link {
       color: #fff;
       padding: 42px 25px 22px;
@@ -167,7 +169,6 @@ p {
     #service .service-row .service-column .service-wrap::before {
       content: '';
       position: absolute;
-      z-index: -1;
       height: 120px;
       width: 120px;
       top: -10px;
@@ -235,7 +236,14 @@ p {
       bottom: -15px;
       left: 121px; }
   #about .about-row .about-column {
-    background: #5d4c5b; }
+    background: #5d4c5b;
+    transition: background-color .3s; }
+    #about .about-row .about-column:hover {
+      background: #544452; }
+      #about .about-row .about-column:hover .member-heading {
+        color: #ffffff; }
+      #about .about-row .about-column:hover .member-paragraph {
+        color: #ff8973; }
     #about .about-row .about-column .about-wrap {
       margin: 43px 0 26px;
       text-align: center; }
@@ -251,5 +259,28 @@ p {
       text-align: center;
       color: #a1ca6c;
       margin-bottom: 37px; }
+    #about .about-row .about-column .social-member-list {
+      text-align: center; }
+      #about .about-row .about-column .social-member-list .social-member-list-item {
+        margin: 0 10px 32px;
+        display: inline-block; }
+        #about .about-row .about-column .social-member-list .social-member-list-item:hover .facebook {
+          background: #4f689e; }
+        #about .about-row .about-column .social-member-list .social-member-list-item:hover .twitter {
+          background: #74c7d5; }
+        #about .about-row .about-column .social-member-list .social-member-list-item:hover .google {
+          background: #df5c64; }
+        #about .about-row .about-column .social-member-list .social-member-list-item:hover .linkedin {
+          background: #3e61af; }
+      #about .about-row .about-column .social-member-list .social-member-list-link {
+        display: block;
+        color: #ffffff;
+        line-height: 32px;
+        width: 32px;
+        height: 32px;
+        background: #a1859e;
+        border-radius: 50%;
+        font-size: 16px;
+        transition: background-color .3s; }
 
 /*# sourceMappingURL=style.css.map */
