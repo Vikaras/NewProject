@@ -3,4 +3,16 @@
   background: #81a256 url("../img/gallery-layer.png") no-repeat top center;
   background-size: cover;
   padding: 202px 0 107px;
+
+    .gallery-text-wrap{
+
+      .gallery-heading{
+        margin-bottom: 34px;
+      }
+
+      .gallery-paragraph {
+        padding-bottom: 58px;
+        border-bottom: 1px solid #94b963;
+      }
+    }
 }
