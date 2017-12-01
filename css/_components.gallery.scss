@@ -11,14 +11,18 @@
       }
 
       .gallery-paragraph {
-        padding-bottom: 58px;
-        border-bottom: 1px solid #94b963;
+        margin-bottom: 58px;
       }
     }
 
     .portfolio-wrap {
+      border-top: 1px solid #94b963;
       border-bottom: 1px solid #94b963;
-      padding: 42px 0;
+      &::after {
+        content: '';
+        display: block;
+        clear: both;
+      }
 
       .portfolio-text {
         float: left;
@@ -27,20 +31,11 @@
         font-weight: 700;
         line-height: 24px;
         text-transform: uppercase;
-        &::after {
-          content: '';
-          display: block;
-          clear: both;
-        }
+        margin: 42px 0;
       }
 
       .portfolio-list {
         float: right;
-        &::after {
-          content: '';
-          display: block;
-          clear: both;
-        }
 
         .portfolio-list-item {
           display: inline-block;
@@ -49,7 +44,7 @@
           line-height: 24px;
           color: #ffffff;
           padding: 13px 10px;
-          margin: 0 16px;
+          margin: 29px 16px;
           transition: background-color .3s;
           &:hover {
             background: #f5c149;
