@@ -39,17 +39,20 @@
 
         .portfolio-list-item {
           display: inline-block;
+          margin: 42px 16px;
+        }
+
+        .portfolio-list-link {
           font-size: 16px;
           font-weight: 700;
           line-height: 24px;
           color: #ffffff;
           padding: 13px 10px;
-          margin: 29px 16px;
+          border-radius: 5px;
           transition: background-color .3s;
           &:hover {
             background: #f5c149;
           }
-
         }
       }
     }
