@@ -51,11 +51,6 @@
           padding: 13px 10px;
           margin: 0 16px;
           transition: background-color .3s;
-          &::after {
-            content: '';
-            display: block;
-            clear: both;
-          }
           &:hover {
             background: #f5c149;
           }

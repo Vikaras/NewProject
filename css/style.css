@@ -59,7 +59,8 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  align-items: center; }
+  align-items: center;
+  width: 100%; }
 
 .column {
   width: 23.5%;
@@ -321,10 +322,6 @@ p {
         padding: 13px 10px;
         margin: 0 16px;
         transition: background-color .3s; }
-        #gallery .portfolio-wrap .portfolio-list .portfolio-list-item::after {
-          content: '';
-          display: block;
-          clear: both; }
         #gallery .portfolio-wrap .portfolio-list .portfolio-list-item:hover {
           background: #f5c149; }
 
