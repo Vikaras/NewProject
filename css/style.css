@@ -233,8 +233,8 @@ p {
       border-left: 15px solid transparent;
       border-right: 15px solid transparent;
       border-top: 15px solid #a1ca6c;
-      bottom: -15px;
-      left: 121px; }
+      bottom: calc(100% - 65px);
+      left: calc(100% - 153px); }
   #about .about-row .about-column {
     background: #5d4c5b;
     transition: background-color .3s; }
@@ -332,6 +332,7 @@ p {
         width: 100%;
         display: block; }
       #gallery .gallery-row .gallery-column .gallery-text-wrap {
+        position: relative;
         background: #eeeeee;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px; }
@@ -342,5 +343,15 @@ p {
           color: #727272;
           line-height: 58px;
           text-transform: uppercase; }
+          #gallery .gallery-row .gallery-column .gallery-text-wrap .gallery-text::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 20px solid #ffffff;
+            bottom: calc(100% + 1px);
+            left: calc(100% - 149.25px); }
 
 /*# sourceMappingURL=style.css.map */

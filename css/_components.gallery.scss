@@ -70,6 +70,7 @@
       }
 
       .gallery-text-wrap {
+        position: relative;
         background: #eeeeee;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -81,6 +82,17 @@
           color: #727272;
           line-height: 58px;
           text-transform: uppercase;
+          &::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-bottom: 20px solid #ffffff;
+            bottom: calc(100% + 1px);
+            left: calc(100% - 149.25px);
+          }
         }
       }
     }
