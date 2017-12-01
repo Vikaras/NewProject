@@ -70,19 +70,20 @@
       }
 
       .gallery-text-wrap {
-        position: relative;
         background: #eeeeee;
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
 
         .gallery-text {
+          position: relative;
+          width: 100%;
           font-size: $paragraph-text-size;
           font-weight: $paragraph-text-weight;
           text-align: $paragraph-align;
           color: #727272;
           line-height: 58px;
           text-transform: uppercase;
-          &::after {
+          &::before {
             content: '';
             position: absolute;
             width: 0;
@@ -90,8 +91,8 @@
             border-left: 20px solid transparent;
             border-right: 20px solid transparent;
             border-bottom: 20px solid #ffffff;
-            bottom: calc(100% + 1px);
-            left: calc(100% - 149.25px);
+            bottom: 59px;
+            left: calc(50% - 10px);
           }
         }
       }
