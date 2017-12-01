@@ -4,56 +4,85 @@
   background-size: cover;
   padding: 202px 0 107px;
 
-    .gallery-text-wrap {
+  .gallery-text-wrap {
 
-      .gallery-heading {
-        margin-bottom: 34px;
-      }
-
-      .gallery-paragraph {
-        margin-bottom: 58px;
-      }
+    .gallery-heading {
+      margin-bottom: 34px;
     }
 
-    .portfolio-wrap {
-      border-top: 1px solid #94b963;
-      border-bottom: 1px solid #94b963;
-      &::after {
-        content: '';
-        display: block;
-        clear: both;
+    .gallery-paragraph {
+      margin-bottom: 58px;
+    }
+  }
+
+  .portfolio-wrap {
+    border-top: 1px solid #94b963;
+    border-bottom: 1px solid #94b963;
+    margin-bottom: 42px;
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
+
+    .portfolio-text {
+      float: left;
+      color: #ffffff;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24px;
+      text-transform: uppercase;
+      margin: 42px 0;
+    }
+
+    .portfolio-list {
+      float: right;
+
+      .portfolio-list-item {
+        display: inline-block;
+        margin: 42px 16px;
       }
 
-      .portfolio-text {
-        float: left;
-        color: #ffffff;
-        font-size: 20px;
+      .portfolio-list-link {
+        font-size: 16px;
         font-weight: 700;
         line-height: 24px;
-        text-transform: uppercase;
-        margin: 42px 0;
-      }
-
-      .portfolio-list {
-        float: right;
-
-        .portfolio-list-item {
-          display: inline-block;
-          margin: 42px 16px;
-        }
-
-        .portfolio-list-link {
-          font-size: 16px;
-          font-weight: 700;
-          line-height: 24px;
-          color: #ffffff;
-          padding: 13px 10px;
-          border-radius: 5px;
-          transition: background-color .3s;
-          &:hover {
-            background: #f5c149;
-          }
+        color: #ffffff;
+        padding: 13px 10px;
+        border-radius: 5px;
+        transition: background-color .3s;
+        &:hover {
+          background: #f5c149;
         }
       }
     }
+  }
+
+  .gallery-row {
+    position: relative;
+
+    .gallery-column {
+      margin-top: 20px;
+      > img {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+      }
+
+      .gallery-text-wrap {
+        background: #eeeeee;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+
+        .gallery-text {
+          font-size: $paragraph-text-size;
+          font-weight: $paragraph-text-weight;
+          text-align: $paragraph-align;
+          color: #727272;
+          line-height: 58px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
 }
