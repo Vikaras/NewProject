@@ -8,6 +8,12 @@
 		  type="text/css">
 	<link rel="stylesheet" href="css/style.css" type="text/css">
 	<title>Acrostia</title>
+	<style>
+		#map {
+			height: 400px;
+			width: 100%;
+		}
+	</style>
 </head>
 <body>
 <header id="header-nav">
@@ -306,35 +312,44 @@
 	</div>
 </section>
 <section id="contact">
-<div class="container">
-	<div class="contact-text-wrap">
-		<h2 class=" heading contact-heading"></h2>
-		<p class="paragraph contact-paragraph"></p>
-	</div>
-	<div class="row contact-row">
-		<div class="column-contact">
-			<h4 class="contact-heading"></h4>
-			<p class="contact-info"></p>
-			<ul class="contact-list">
-				<li class="contact-list-item"></li>
-				<li class="contact-list-item"></li>
-				<li class="contact-list-item"></li>
-				<li class="contact-list-item"></li>
-			</ul>
-			<div class="contact-map">
+	<div class="container">
+		<div class="contact-text-wrap">
+			<h2 class=" heading contact-heading">contact us</h2>
+			<p class="paragraph contact-paragraph">Cras suscipit porttitor porttitor. Morbi sit amet tincidunt sapien.
+				Curabitur posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper quis libero et,
+				ultricies commodo est. Quisque at ante vitae justo fermentum viverra ac eu justo. Ut luctus imperdiet
+				lacus, eget laoreet erat posuere quis.</p>
+		</div>
+		<div class="row contact-row">
+			<div class="column-contact">
+				<h4 class="contact-heading">Address</h4>
+				<p class="contact-info">Acrostia
+					<span class="contact-address">Sevenoaks Rd <br>Sevenoaks TN14 7HR, UK</span>
+				</p>
+				<ul class="contact-list">
+					<li class="contact-list-item">Phone:<a href="#" class="contact-list-link">+44 555 555 555</a></li>
+					<li class="contact-list-item">Fax:<a href="#" class="contact-list-link">+44 556  555 555</a></li>
+					<li class="contact-list-item">E-mail:<a href="#" class="contact-list-link">info@acrostia.com</a></li>
+					<li class="contact-list-item">Skype:<a href="#" class="contact-list-link">Ac0stia</a></li>
+				</ul>
+				<div id="map"></div>
+			</div>
+			<div class="column-contact">
+				<h2 class="heading contact-heading">Ask a question</h2>
+				<form action="#" id="contact-form">
+					<input type="text" placeholder="Name" class="contact-input" required>
+					<input type="email" placeholder="Email address" class="contact-input" required>
+					<textarea name="textarea" id="-contact-textarea" cols="30" rows="10"
+							  placeholder="Your question"></textarea>
+					<button class="btn">Send</button>
+				</form>
 			</div>
 		</div>
-		<div class="column-contact">
-			<h2 class="heading contact-heading"></h2>
-			<form action="#" id="contact-form">
-				<input type="text" placeholder="Name" class="contact-input" required>
-				<input type="email" placeholder="Email address" class="contact-input" required>
-				<textarea name="textarea" id="-contact-textarea" cols="30" rows="10" placeholder="Your question"></textarea>
-				<button class="btn"></button>
-			</form>
-		</div>
 	</div>
-</div>
 </section>
+<script src="js/scripts.js"></script>
+<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBAkT1JTyY_mtrpZ-_n-sGyPoljv_UdZo&callback=initMap">
+</script>
 </body>
 </html>
