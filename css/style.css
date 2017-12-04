@@ -15,8 +15,7 @@ body {
 ul {
   margin: 0;
   padding: 0;
-  list-style: none;
-  font-size: 0; }
+  list-style: none; }
 
 a {
   text-decoration: none; }
@@ -93,6 +92,7 @@ p {
       display: block;
       clear: both; }
     #header-nav .nav-list .nav-list-item {
+      float: right;
       margin: 42px 5px 0;
       display: inline-block;
       font-size: 18px; }
@@ -307,6 +307,7 @@ p {
     #gallery .portfolio-wrap .portfolio-list {
       float: right; }
       #gallery .portfolio-wrap .portfolio-list .portfolio-list-item {
+        float: right;
         display: inline-block;
         margin: 42px 16px; }
       #gallery .portfolio-wrap .portfolio-list .portfolio-list-link {
@@ -376,34 +377,29 @@ p {
     margin-bottom: 34px; }
   #contact .contact-text-wrap .contact-paragraph {
     margin-bottom: 122px; }
-  #contact .column-contact {
-    width: 47.7%; }
-    #contact .column-contact + .column-contact {
-      margin-left: 4.6%; }
-    #contact .column-contact .contact-heading {
+  #contact .column-one-fourth {
+    width: 25%; }
+    #contact .column-one-fourth .contact-heading {
       font-size: 30px;
       font-weight: 300;
       line-height: 30px;
       margin-bottom: 27px; }
-    #contact .column-contact .company-name {
+    #contact .column-one-fourth .company-name {
       font-size: 20px;
       font-weight: 700;
       line-height: 16.8px;
       color: #c0dfda;
       margin-bottom: 19px; }
-    #contact .column-contact .contact-address {
+    #contact .column-one-fourth .contact-address {
       font-size: 16px;
       font-weight: 400;
       line-height: 21px;
       margin-bottom: 77px; }
-    #contact .column-contact #map {
-      float: right;
+    #contact .column-one-fourth #map {
       width: 260px;
       height: 220px;
       border-radius: 5px; }
-      #contact .column-contact #map ::after {
-        content: '';
-        display: block;
-        clear: both; }
+  #contact .column-half {
+    width: 50%; }
 
 /*# sourceMappingURL=style.css.map */

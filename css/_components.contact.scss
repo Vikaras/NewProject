@@ -15,11 +15,8 @@
     }
   }
 
-  .column-contact {
-    width: 47.7%;
-    & + .column-contact {
-      margin-left: 4.6%;
-    }
+  .column-one-fourth {
+    width: 25%;
 
     .contact-heading {
       font-size: 30px;
@@ -43,16 +40,13 @@
     }
 
     #map {
-      float: right;
       width: 260px;
       height: 220px;
       border-radius: 5px;
-      ::after {
-        content: '';
-        display: block;
-        clear: both;
-      }
     }
   }
 
+  .column-half {
+    width: 50%;
+  }
 }
