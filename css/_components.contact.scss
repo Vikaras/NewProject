@@ -23,7 +23,8 @@
       margin-bottom: 27px;
     }
 
-    .contact-column {
+    .contact-column-1 {
+      width: 19.5%;
 
       .company-name {
         font-size: 20px;
@@ -43,6 +44,7 @@
       .contact-list {
 
         .contact-list-item {
+
           & .contact-text {
             display: inline-block;
             width: 72px;
@@ -62,6 +64,7 @@
       }
     }
     .contact-column-map {
+      margin-left: 4%;
       padding-top: 52px;
       #map {
         width: 260px;
@@ -71,15 +74,30 @@
     }
 
     .contact-half-column {
+      position: relative;
+      margin-left: 4%;
 
       #contact-form {
+        display: flex;
+        flex-direction: column;
 
-        .contact-input {
-          width: 260px;
-          margin-bottom: 19px;
-          & + .contact-input {
-            margin-left: 20px;
+        .contacts-input-wrap {
+          display: flex;
+          justify-content: space-between;
+
+          .contact-input {
+            width: 50%;
+            margin-bottom: 20px;
+            & + .contact-input {
+              margin-left: 20px;
+            }
           }
+        }
+
+        #contact-textarea {
+          width: 100%;
+          height: 169px;
+          resize: none;
         }
 
         .contact-input,
@@ -92,6 +110,34 @@
           padding: 14px 0 14px 19px;
           border-radius: 5px;
           border: none;
+          font-family: 'Lato', sans-serif;
+          &:focus {
+            background: #ffffff;
+            color: #b5b5b5;
+          }
+        }
+
+        .btn {
+          position: absolute;
+          width: 48%;
+          top: calc(100% + 30px);
+          left: calc(50% - 130px);
+          font-size: 26px;
+          font-weight: 700;
+          color: #ffffff;
+          background: #df5c64;
+          line-height: 21px;
+          border: none;
+          border-radius: 5px;
+          text-transform: uppercase;
+          padding: 13px 0 16px;
+          cursor: pointer;
+          &:hover {
+            background: #ffffff;
+            color: #df5c64;
+            border: 1px solid #df5c64;
+            transition: .3s;
+          }
         }
       }
     }

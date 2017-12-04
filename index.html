@@ -315,7 +315,7 @@
 				lacus, eget laoreet erat posuere quis.</p>
 		</div>
 		<div class="row contact-row">
-			<div class="column contact-column one-fourth">
+			<div class="column contact-column-1 one-fourth">
 				<h4 class="contact-heading-info">Address</h4>
 				<p class="company-name">Acrostia
 				</p>
@@ -335,10 +335,12 @@
 			<div class="column contact-half-column one-half">
 				<h4 class="contact-heading-info">Ask a question</h4>
 				<form action="#" id="contact-form">
-					<input type="text" placeholder="Name" class="contact-input" required>
-					<input type="email" placeholder="Email address" class="contact-input" required>
+					<div class="contacts-input-wrap">
+						<input type="text" placeholder="Name" class="contact-input" required>
+						<input type="email" placeholder="Email address" class="contact-input" required>
+					</div>
 					<textarea name="textarea" id="contact-textarea" cols="30" rows="10"
-							  placeholder="Your question"></textarea>
+							  placeholder="Your question" required></textarea>
 					<button class="btn">Send</button>
 				</form>
 			</div>
