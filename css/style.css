@@ -376,5 +376,9 @@ p {
   background: #75b4aa url("../img/contact-layer.png") no-repeat top center;
   background-size: cover;
   padding: 191px 0 231px; }
+  #contact .contact-text-wrap .contact-heading {
+    margin-bottom: 34px; }
+  #contact .contact-text-wrap .contact-paragraph {
+    margin-bottom: 122px; }
 
 /*# sourceMappingURL=style.css.map */
