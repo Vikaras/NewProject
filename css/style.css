@@ -9,7 +9,8 @@ body {
   padding: 0;
   min-height: 100%;
   position: relative;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  color: #fff; }
 
 ul {
   margin: 0;
@@ -147,7 +148,6 @@ p {
   #service .service-text-wrap .service-heading {
     margin-bottom: 46px; }
   #service .service-text-wrap .service-text {
-    color: #ffffff;
     font-size: 20px;
     text-transform: uppercase;
     line-height: 58px;
@@ -192,7 +192,6 @@ p {
       color: #df5c64;
       line-height: 110px; }
   #service .service-row .service-column .service-feature-heading {
-    color: #ffffff;
     font-size: 30px;
     font-weight: 300;
     text-transform: uppercase;
@@ -217,7 +216,6 @@ p {
     width: 276px;
     height: 50px;
     background: #a1ca6c;
-    color: #ffffff;
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 700;
@@ -301,7 +299,6 @@ p {
       clear: both; }
     #gallery .portfolio-wrap .portfolio-text {
       float: left;
-      color: #ffffff;
       font-size: 20px;
       font-weight: 700;
       line-height: 24px;
@@ -383,5 +380,30 @@ p {
     width: 47.7%; }
     #contact .column-contact + .column-contact {
       margin-left: 4.6%; }
+    #contact .column-contact .contact-heading {
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 30px;
+      margin-bottom: 27px; }
+    #contact .column-contact .company-name {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 16.8px;
+      color: #c0dfda;
+      margin-bottom: 19px; }
+    #contact .column-contact .contact-address {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 21px;
+      margin-bottom: 77px; }
+    #contact .column-contact #map {
+      float: right;
+      width: 260px;
+      height: 220px;
+      border-radius: 5px; }
+      #contact .column-contact #map ::after {
+        content: '';
+        display: block;
+        clear: both; }
 
 /*# sourceMappingURL=style.css.map */
