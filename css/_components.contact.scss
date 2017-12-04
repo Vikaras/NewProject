@@ -23,25 +23,69 @@
       margin-bottom: 27px;
     }
 
-    .company-name {
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 16.8px;
-      color: #c0dfda;
-      margin-bottom: 19px;
+    .contact-column {
+
+      .company-name {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 16.8px;
+        color: #c0dfda;
+        margin-bottom: 19px;
+      }
+
+      .contact-address {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        margin-bottom: 77px;
+      }
+
+      .contact-list {
+
+        .contact-list-item {
+          &.contact-text {
+            display: inline-block;
+            width: 72px;
+            color: #d0efea;
+            font-size: 16px;
+            line-height: 21px;
+            font-weight: 400;
+          }
+          &.contact-list-link {
+            color: #ffffff;
+            text-decoration: underline;
+          }
+          &.contact-info-text {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .contact-column-map {
+      padding-top: 52px;
+      #map {
+        width: 260px;
+        height: 240px;
+        border-radius: 5px;
+      }
     }
 
-    .contact-address {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 21px;
-      margin-bottom: 77px;
-    }
+    .contact-half-column {
 
-    #map {
-      width: 260px;
-      height: 220px;
-      border-radius: 5px;
+      #contact-form {
+
+        .contact-input,
+        #contact-textarea {
+          background: #68a097;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 21px;
+          color: #82c8bd;
+          padding: 14px 0 14px 19px;
+          border-radius: 5px;
+          border: none;
+        }
+      }
     }
   }
 }
