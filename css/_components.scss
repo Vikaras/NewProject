@@ -32,10 +32,23 @@
 }
 
 .column {
-  width: 23.5%;
-  border-radius: 5px;
+
+  &.one-fourth {
+    width: 23.5%;
+  }
+
+  &.one-third {
+    width: 32%;
+  }
+
+  &.one-half {
+    width: 49%;
+  }
+
   & + .column {
     margin-left: 2%;
   }
 }
+
+
 

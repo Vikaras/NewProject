@@ -43,6 +43,7 @@
     .about-row {
 
       .about-column {
+        border-radius: 5px;
         background: #5d4c5b;
         transition: background-color .3s;
         &:hover {

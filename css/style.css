@@ -62,11 +62,14 @@ p {
   align-items: center;
   width: 100%; }
 
-.column {
-  width: 23.5%;
-  border-radius: 5px; }
-  .column + .column {
-    margin-left: 2%; }
+.column.one-fourth {
+  width: 23.5%; }
+.column.one-third {
+  width: 32%; }
+.column.one-half {
+  width: 49%; }
+.column + .column {
+  margin-left: 2%; }
 
 #header-nav {
   position: fixed;
@@ -144,6 +147,7 @@ p {
   background-size: cover;
   padding: 190px 0 124px; }
   #service .service-column {
+    border-radius: 5px;
     background: #c45158; }
   #service .service-text-wrap .service-heading {
     margin-bottom: 46px; }
@@ -233,6 +237,7 @@ p {
       bottom: -15px;
       left: calc(50% - 15px); }
   #about .about-row .about-column {
+    border-radius: 5px;
     background: #5d4c5b;
     transition: background-color .3s; }
     #about .about-row .about-column:hover {
@@ -377,29 +382,25 @@ p {
     margin-bottom: 34px; }
   #contact .contact-text-wrap .contact-paragraph {
     margin-bottom: 122px; }
-  #contact .column-one-fourth {
-    width: 25%; }
-    #contact .column-one-fourth .contact-heading {
-      font-size: 30px;
-      font-weight: 300;
-      line-height: 30px;
-      margin-bottom: 27px; }
-    #contact .column-one-fourth .company-name {
-      font-size: 20px;
-      font-weight: 700;
-      line-height: 16.8px;
-      color: #c0dfda;
-      margin-bottom: 19px; }
-    #contact .column-one-fourth .contact-address {
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 21px;
-      margin-bottom: 77px; }
-    #contact .column-one-fourth #map {
-      width: 260px;
-      height: 220px;
-      border-radius: 5px; }
-  #contact .column-half {
-    width: 50%; }
+  #contact .contact-row .contact-heading-info {
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 30px;
+    margin-bottom: 27px; }
+  #contact .contact-row .company-name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 16.8px;
+    color: #c0dfda;
+    margin-bottom: 19px; }
+  #contact .contact-row .contact-address {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-bottom: 77px; }
+  #contact .contact-row #map {
+    width: 260px;
+    height: 220px;
+    border-radius: 5px; }
 
 /*# sourceMappingURL=style.css.map */

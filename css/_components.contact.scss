@@ -14,11 +14,9 @@
       margin-bottom: 122px;
     }
   }
+  .contact-row {
 
-  .column-one-fourth {
-    width: 25%;
-
-    .contact-heading {
+    .contact-heading-info {
       font-size: 30px;
       font-weight: $heading-text-weight;
       line-height: 30px;
@@ -32,6 +30,7 @@
       color: #c0dfda;
       margin-bottom: 19px;
     }
+
     .contact-address {
       font-size: 16px;
       font-weight: 400;
@@ -44,9 +43,5 @@
       height: 220px;
       border-radius: 5px;
     }
-  }
-
-  .column-half {
-    width: 50%;
   }
 }
