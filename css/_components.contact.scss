@@ -43,7 +43,7 @@
       .contact-list {
 
         .contact-list-item {
-          &.contact-text {
+          & .contact-text {
             display: inline-block;
             width: 72px;
             color: #d0efea;
@@ -51,11 +51,11 @@
             line-height: 21px;
             font-weight: 400;
           }
-          &.contact-list-link {
+          & .contact-list-link {
             color: #ffffff;
             text-decoration: underline;
           }
-          &.contact-info-text {
+          & .contact-info-text {
             color: #ffffff;
           }
         }
@@ -73,6 +73,14 @@
     .contact-half-column {
 
       #contact-form {
+
+        .contact-input {
+          width: 260px;
+          margin-bottom: 19px;
+          & + .contact-input {
+            margin-left: 20px;
+          }
+        }
 
         .contact-input,
         #contact-textarea {
