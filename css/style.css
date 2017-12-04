@@ -371,4 +371,10 @@ p {
             bottom: 59px;
             left: calc(50% - 20px); }
 
+#contact {
+  position: relative;
+  background: #75b4aa url("../img/contact-layer.png") no-repeat top center;
+  background-size: cover;
+  padding: 191px 0 231px; }
+
 /*# sourceMappingURL=style.css.map */
