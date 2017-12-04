@@ -34,8 +34,8 @@
 .column {
   width: 23.5%;
   border-radius: 5px;
+  & + .column {
+    margin-left: 2%;
+  }
 }
 
-.column + .column {
-  margin-left: 2%;
-}

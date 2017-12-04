@@ -15,12 +15,12 @@
     }
   }
 
-  //.column-contact {
-  //  width: 47.7%;
-  //  & + .column-contact {
-  //    margin-left: 4.6%;
-  //  }
-  //}
+  .column-contact {
+    width: 47.7%;
+    & + .column-contact {
+      margin-left: 4.6%;
+    }
+  }
 
 
 }

@@ -65,9 +65,8 @@ p {
 .column {
   width: 23.5%;
   border-radius: 5px; }
-
-.column + .column {
-  margin-left: 2%; }
+  .column + .column {
+    margin-left: 2%; }
 
 #header-nav {
   position: fixed;
@@ -380,5 +379,9 @@ p {
     margin-bottom: 34px; }
   #contact .contact-text-wrap .contact-paragraph {
     margin-bottom: 122px; }
+  #contact .column-contact {
+    width: 47.7%; }
+    #contact .column-contact + .column-contact {
+      margin-left: 4.6%; }
 
 /*# sourceMappingURL=style.css.map */
