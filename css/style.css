@@ -312,7 +312,7 @@ p {
     #gallery .portfolio-wrap .portfolio-list {
       float: right; }
       #gallery .portfolio-wrap .portfolio-list .portfolio-list-item {
-        float: right;
+        float: left;
         display: inline-block;
         margin: 42px 16px; }
       #gallery .portfolio-wrap .portfolio-list .portfolio-list-link {
