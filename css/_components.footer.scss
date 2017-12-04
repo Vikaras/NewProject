@@ -1,0 +1,41 @@
+#footer-nav {
+  height: 150px;
+  width: 100%;
+  background: #68a097;
+  padding: 41px 0 48px;
+
+  .footer-list {
+    text-align: center;
+
+    .footer-list-item {
+      margin: 0 10px;
+      display: inline-block;
+      &:hover {
+        .facebook {
+          background: #4f689e;
+        }
+        .twitter {
+          background: #74c7d5;
+        }
+        .google {
+          background: #df5c64;
+        }
+        .linkedin {
+          background: #3e61af;
+        }
+      }
+    }
+
+    .footer-list-link {
+      display: block;
+      color: #ffffff;
+      line-height: 60px;
+      width: 60px;
+      height: 60px;
+      background: #82c8bd;
+      border-radius: 50%;
+      font-size: 30px;
+      transition: background-color .3s;
+    }
+  }
+}
