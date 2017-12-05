@@ -148,6 +148,18 @@ p {
   border: none;
   box-shadow: none;
   margin-bottom: 0; }
+  .bx-wrapper .bx-controls-direction a {
+    margin-top: -28px;
+    width: 56px;
+    height: 56px; }
+  .bx-wrapper .bx-prev {
+    background: url("../img/prev.png") no-repeat; }
+  .bx-wrapper .bx-next {
+    background: url("../img/next.png") no-repeat; }
+    .bx-wrapper .bx-next:hover {
+      background-position: 0 0; }
+    .bx-wrapper .bx-next:focus {
+      background-position: 0 0; }
   .bx-wrapper .bx-pager {
     position: absolute;
     bottom: 91px;
