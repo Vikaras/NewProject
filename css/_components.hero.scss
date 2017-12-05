@@ -56,11 +56,6 @@
   box-shadow: none;
   margin-bottom: 0;
 
-  .bx-prev {
-    width: 60px;
-    height: 60px;
-  }
-
   .bx-pager {
     position: absolute;
     bottom: 91px;
@@ -73,9 +68,7 @@
         width: 20px;
         height: 20px;
         margin: 0 20px;
-        outline: 0;
         border-radius: 50%;
-
       }
     }
   }
@@ -85,4 +78,5 @@
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
   background: #74c7d5;
+  transition: .3s;
 }
