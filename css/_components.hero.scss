@@ -63,10 +63,12 @@
   }
 
   .bx-prev {
+    left: 49px;
     background: url("../img/prev.png") no-repeat;
   }
 
   .bx-next {
+    right: 49px;
     background: url("../img/next.png") no-repeat;
     &:hover {
       background-position: 0 0;
