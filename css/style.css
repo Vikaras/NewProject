@@ -110,36 +110,35 @@ p {
 
 #hero {
   position: relative; }
-  #hero .hero-cover {
+  #hero .slider .hero-cover-slide {
     width: 100%;
     height: auto;
     max-height: 100%;
     display: block; }
-  #hero .hero-heading-wrap {
+  #hero .slider .hero-heading-wrap {
     position: absolute;
     top: 50%;
     left: 50%;
     margin: -85px 0 0 -420px;
     padding: 34px 66px 34px 42px;
     background: rgba(255, 255, 255, 0.3); }
-    #hero .hero-heading-wrap .hero-heading-text-left {
+    #hero .slider .hero-heading-wrap::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #hero .slider .hero-heading-wrap .hero-heading-text-left {
       float: left;
       font-size: 60px;
       font-weight: 300;
       text-align: right;
       line-height: 58px;
       width: 367px; }
-    #hero .hero-heading-wrap .hero-heading-text-right {
+    #hero .slider .hero-heading-wrap .hero-heading-text-right {
       float: left;
       margin-left: 23px;
       font-size: 138px;
       font-weight: 700;
       line-height: 116px; }
-    #hero .hero-heading-wrap .hero-heading-text-left::after,
-    #hero .hero-heading-wrap .hero-heading-text-right::after {
-      content: '';
-      display: block;
-      clear: both; }
 
 #service {
   position: relative;

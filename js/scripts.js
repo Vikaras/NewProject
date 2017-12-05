@@ -9,3 +9,7 @@ function initMap() {
     map: map
   })
 }
+
+$(document).ready(function(){
+  $('.slider').bxSlider();
+});
