@@ -374,9 +374,7 @@ p {
   #gallery .gallery-row {
     position: relative; }
     #gallery .gallery-row .gallery-column {
-      margin-top: 20px; }
-      #gallery .gallery-row .gallery-column:nth-of-type(5) {
-        margin-left: 0; }
+      margin: 20px 8px 0; }
       #gallery .gallery-row .gallery-column .gallery-img-wrap .gallery-img-link {
         display: block;
         position: relative;
@@ -425,7 +423,7 @@ p {
             border-left: 20px solid transparent;
             border-right: 20px solid transparent;
             border-bottom: 20px solid #ffffff;
-            bottom: 59px;
+            bottom: 58px;
             left: calc(50% - 20px); }
 
 #contact {
