@@ -12,10 +12,22 @@
 
     .second-text {
       left: calc(50% - 556px) !important;
+      @media (max-width: 1400px) {
+        left: calc(50% - 380px) !important;
+      }
+      @media  (max-width: 1024px) {
+        left: calc(50% - 286px) !important;
+      }
     }
 
     .third-text {
       left: calc(50% - 486px) !important;
+      @media (max-width: 1400px) {
+        left: calc(50% - 334px) !important;
+      }
+      @media (max-width: 1024px) {
+        left: calc(50% - 251px) !important;
+      }
     }
 
     .hero-heading-wrap {
@@ -23,6 +35,16 @@
       top: calc(50% - 92px);
       left: calc(50% - 458px);
       padding: 34px 66px 34px 42px;
+      @media (max-width: 1400px) {
+        padding: 34px 42px;
+        left: calc(50% - 315px);
+        top: calc(50% - 73px);
+      }
+      @media (max-width: 1024px) {
+        padding: 17px 21px;
+        left: calc(50% - 237px);
+        top: calc(50% - 45px);
+      }
       background: rgba(255, 255, 255, .3);
       &::after {
         content: '';
@@ -37,6 +59,16 @@
         text-align: right;
         line-height: 58px;
         width: 367px;
+        @media (max-width: 1400px) {
+          font-size: 40px;
+          line-height: 38px;
+          width: 245px;
+        }
+        @media (max-width: 1024px) {
+          font-size: 30px;
+          line-height: 28px;
+          width: 200px;
+        }
       }
 
       .hero-heading-text-right {
@@ -45,6 +77,14 @@
         font-size: 138px;
         font-weight: 700;
         line-height: 116px;
+        @media (max-width: 1400px) {
+          font-size: 92px;
+          line-height: 77px;
+        }
+        @media (max-width: 1024px) {
+          font-size: 69px;
+          line-height: 57px;
+        }
       }
     }
   }
@@ -63,12 +103,12 @@
   }
 
   .bx-prev {
-    left: 49px;
+    left: 4%;
     background: url("../img/prev.png") no-repeat;
   }
 
   .bx-next {
-    right: 49px;
+    right: 4%;
     background: url("../img/next.png") no-repeat;
     &:hover {
       background-position: 0 0;

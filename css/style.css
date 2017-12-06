@@ -125,14 +125,36 @@ p {
     display: block; }
   #hero .slider .second-text {
     left: calc(50% - 556px) !important; }
+    @media (max-width: 1400px) {
+      #hero .slider .second-text {
+        left: calc(50% - 380px) !important; } }
+    @media (max-width: 1024px) {
+      #hero .slider .second-text {
+        left: calc(50% - 286px) !important; } }
   #hero .slider .third-text {
     left: calc(50% - 486px) !important; }
+    @media (max-width: 1400px) {
+      #hero .slider .third-text {
+        left: calc(50% - 334px) !important; } }
+    @media (max-width: 1024px) {
+      #hero .slider .third-text {
+        left: calc(50% - 251px) !important; } }
   #hero .slider .hero-heading-wrap {
     position: absolute;
     top: calc(50% - 92px);
     left: calc(50% - 458px);
     padding: 34px 66px 34px 42px;
     background: rgba(255, 255, 255, 0.3); }
+    @media (max-width: 1400px) {
+      #hero .slider .hero-heading-wrap {
+        padding: 34px 42px;
+        left: calc(50% - 315px);
+        top: calc(50% - 73px); } }
+    @media (max-width: 1024px) {
+      #hero .slider .hero-heading-wrap {
+        padding: 17px 21px;
+        left: calc(50% - 237px);
+        top: calc(50% - 45px); } }
     #hero .slider .hero-heading-wrap::after {
       content: '';
       display: block;
@@ -144,12 +166,30 @@ p {
       text-align: right;
       line-height: 58px;
       width: 367px; }
+      @media (max-width: 1400px) {
+        #hero .slider .hero-heading-wrap .hero-heading-text-left {
+          font-size: 40px;
+          line-height: 38px;
+          width: 245px; } }
+      @media (max-width: 1024px) {
+        #hero .slider .hero-heading-wrap .hero-heading-text-left {
+          font-size: 30px;
+          line-height: 28px;
+          width: 200px; } }
     #hero .slider .hero-heading-wrap .hero-heading-text-right {
       float: left;
       margin-left: 23px;
       font-size: 138px;
       font-weight: 700;
       line-height: 116px; }
+      @media (max-width: 1400px) {
+        #hero .slider .hero-heading-wrap .hero-heading-text-right {
+          font-size: 92px;
+          line-height: 77px; } }
+      @media (max-width: 1024px) {
+        #hero .slider .hero-heading-wrap .hero-heading-text-right {
+          font-size: 69px;
+          line-height: 57px; } }
 
 .bx-wrapper {
   background: none;
@@ -161,10 +201,10 @@ p {
     width: 56px;
     height: 56px; }
   .bx-wrapper .bx-prev {
-    left: 49px;
+    left: 4%;
     background: url("../img/prev.png") no-repeat; }
   .bx-wrapper .bx-next {
-    right: 49px;
+    right: 4%;
     background: url("../img/next.png") no-repeat; }
     .bx-wrapper .bx-next:hover {
       background-position: 0 0; }
