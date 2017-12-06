@@ -84,13 +84,13 @@ p {
     font-family: 'Damion', cursive;
     color: #fff;
     margin-top: 15px; }
-  #header-nav .company-logo::after {
-    content: '';
-    display: block;
-    clear: both; }
+    #header-nav .company-logo::after {
+      content: '';
+      display: block;
+      clear: both; }
   #header-nav .nav-list {
     float: right; }
-    #header-nav .nav-list .nav-list::after {
+    #header-nav .nav-list::after {
       content: '';
       display: block;
       clear: both; }
@@ -99,14 +99,22 @@ p {
       margin: 42px 5px 0;
       display: block;
       font-size: 18px; }
-    #header-nav .nav-list .nav-list-link {
-      color: #fff;
-      padding: 42px 25px 22px;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px; }
-    #header-nav .nav-list .nav-list-link:hover {
-      background: #74c7d5;
-      transition: .3s; }
+      #header-nav .nav-list .nav-list-item .nav-list-link {
+        color: #fff;
+        padding: 42px 25px 22px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transition: .3s; }
+      #header-nav .nav-list .nav-list-item:nth-child(1) .nav-list-link:hover, #header-nav .nav-list .nav-list-item:nth-child(1) .nav-list-link.active {
+        background: #74c7d5; }
+      #header-nav .nav-list .nav-list-item:nth-child(2) .nav-list-link:hover, #header-nav .nav-list .nav-list-item:nth-child(2) .nav-list-link.active {
+        background: #df5c64; }
+      #header-nav .nav-list .nav-list-item:nth-child(3) .nav-list-link:hover, #header-nav .nav-list .nav-list-item:nth-child(3) .nav-list-link.active {
+        background: #91778e; }
+      #header-nav .nav-list .nav-list-item:nth-child(4) .nav-list-link:hover, #header-nav .nav-list .nav-list-item:nth-child(4) .nav-list-link.active {
+        background: #a1ca6c; }
+      #header-nav .nav-list .nav-list-item:nth-child(5) .nav-list-link:hover, #header-nav .nav-list .nav-list-item:nth-child(5) .nav-list-link.active {
+        background: #82c8bd; }
 
 #hero {
   position: relative; }
@@ -207,8 +215,7 @@ p {
     margin: 54px auto 34px;
     border-radius: 50%;
     text-align: center;
-    border: 5px solid #df5c64;
-    z-index: 10; }
+    border: 5px solid #df5c64; }
     #service .service-row .service-column .service-wrap::before {
       content: '';
       position: absolute;

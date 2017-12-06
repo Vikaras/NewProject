@@ -12,18 +12,16 @@
     font-family: 'Damion', cursive;
     color: $text-color;
     margin-top: 15px;
-  }
-
-  .company-logo::after {
-    content: '';
-    display: block;
-    clear: both;
+    &::after {
+      content: '';
+      display: block;
+      clear: both;
+    }
   }
 
   .nav-list {
     float: right;
-
-    .nav-list::after {
+    &::after {
       content: '';
       display: block;
       clear: both;
@@ -34,19 +32,39 @@
       margin: 42px 5px 0;
       display: block;
       font-size: 18px;
-    }
 
-    .nav-list-link {
-      color: $text-color;
-      padding: 42px 25px 22px;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-    }
+      .nav-list-link {
+        color: $text-color;
+        padding: 42px 25px 22px;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        transition: .3s;
+      }
 
-    .nav-list-link:hover {
-      background: #74c7d5;
-      transition: .3s;
-    }
+      &:nth-child(1) .nav-list-link:hover,
+      &:nth-child(1) .nav-list-link.active {
+        background: #74c7d5;
+      }
 
+      &:nth-child(2) .nav-list-link:hover,
+      &:nth-child(2) .nav-list-link.active {
+        background: #df5c64;
+      }
+
+      &:nth-child(3) .nav-list-link:hover,
+      &:nth-child(3) .nav-list-link.active {
+        background: #91778e;
+      }
+
+      &:nth-child(4) .nav-list-link:hover,
+      &:nth-child(4) .nav-list-link.active {
+        background: #a1ca6c;
+      }
+
+      &:nth-child(5) .nav-list-link:hover,
+      &:nth-child(5) .nav-list-link.active {
+        background: #82c8bd;
+      }
+    }
   }
 }
