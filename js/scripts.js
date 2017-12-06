@@ -53,3 +53,37 @@ function onScroll(event){
     }
   });
 }
+
+// Form
+
+(function () {
+  'use strict'
+
+  function qs (selector) {
+    return document.querySelector(selector)
+  }
+
+  var questions = []
+  var form = qs('#contact-form')
+  var name = qs('#name-input').value
+  var email = qs('#email-input').value
+  var text = qs('#contact-textarea').value
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault()
+
+    if (name === '' || email === '' || text === '') {
+      alert('Please fill in all the form fields!')
+      return
+    }
+
+    var question = {
+      name: name,
+      email: email,
+      text: text
+    }
+
+    questions.push(question)
+    alert('Thank you for your question!')
+  })
+})()
