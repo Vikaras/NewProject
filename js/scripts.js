@@ -65,15 +65,29 @@ function onScroll(event){
 
   var questions = []
   var form = qs('#contact-form')
-  var name = qs('#name-input').value
-  var email = qs('#email-input').value
-  var text = qs('#contact-textarea').value
+  var nameInput = qs('#name-input')
+  var emailInput = qs('#email-input')
+  var textArea = qs('#contact-textarea')
 
   form.addEventListener('submit', function (event) {
     event.preventDefault()
 
-    if (name === '' || email === '' || text === '') {
-      alert('Please fill in all the form fields!')
+    var name = nameInput.value
+    var email = emailInput.value
+    var text = textArea.value
+
+    if (name === '') {
+      alert('Please enter your name.')
+      return
+    }
+
+    if (email === '') {
+      alert('Please enter your email.')
+      return
+    }
+
+    if (text === '') {
+      alert('Please write your question.')
       return
     }
 
