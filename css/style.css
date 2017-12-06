@@ -375,6 +375,8 @@ p {
     position: relative; }
     #gallery .gallery-row .gallery-column {
       margin-top: 20px; }
+      #gallery .gallery-row .gallery-column:nth-of-type(5) {
+        margin-left: 0; }
       #gallery .gallery-row .gallery-column .gallery-img-wrap .gallery-img-link {
         display: block;
         position: relative;

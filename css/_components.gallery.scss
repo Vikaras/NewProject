@@ -61,8 +61,12 @@
   .gallery-row {
     position: relative;
 
+
     .gallery-column {
       margin-top: 20px;
+      &:nth-of-type(5) {
+      margin-left: 0;
+    }
 
       .gallery-img-wrap {
 
