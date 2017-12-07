@@ -3,15 +3,36 @@
   background: #665464 url("../img/about-layer.png") no-repeat top center;
   background-size: cover;
   padding: 202px 0 112px;
+  @media (max-width: 1200px) {
+    padding: 140px 20px;
+  }
+  @media (max-width: 768px) {
+    padding: 120px 20px;
+  }
+  @media (max-width: 600px) {
+    padding: 100px 40px;
+  }
 
     .about-text-wrap {
 
       .about-heading {
         margin-bottom: 34px;
+        @media (max-width: 1065px) {
+          margin-bottom: 30px;
+        }
+        @media (max-width: 768px) {
+          margin-bottom: 25px;
+        }
       }
 
       .about-paragraph {
         margin-bottom: 59px;
+      }
+      @media (max-width: 1065px) {
+        margin-bottom: 50px;
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 45px;
       }
 
       .about-team {
@@ -26,6 +47,9 @@
         line-height: 50px;
         text-align: center;
         border-radius: 5px;
+        @media (max-width: 350px) {
+          width: 90%;
+        }
         &::after {
           content: '';
           position: absolute;
@@ -75,6 +99,12 @@
           text-align: center;
           color: #a1ca6c;
           margin-bottom: 37px;
+          @media (max-width: 1065px) {
+            margin-bottom: 32px;
+          }
+          @media (max-width: 768px) {
+            margin-bottom: 27px;
+          }
         }
 
         .social-member-list {
@@ -83,6 +113,9 @@
           .social-member-list-item{
             margin: 0 10px 32px;
             display: inline-block;
+            @media (max-width: 964px) {
+              margin: 0 7px 30px;
+            }
             &:hover {
               .facebook {
                 background: #4f689e;
