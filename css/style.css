@@ -563,10 +563,31 @@ p {
   background: #81a256 url("../img/gallery-layer.png") no-repeat top center;
   background-size: cover;
   padding: 202px 0 107px; }
+  @media (max-width: 1200px) {
+    #gallery {
+      padding: 140px 20px; } }
+  @media (max-width: 768px) {
+    #gallery {
+      padding: 120px 20px; } }
+  @media (max-width: 600px) {
+    #gallery {
+      padding: 100px 40px; } }
   #gallery .gallery-text-wrap .gallery-heading {
     margin-bottom: 34px; }
+    @media (max-width: 1065px) {
+      #gallery .gallery-text-wrap .gallery-heading {
+        margin-bottom: 30px; } }
+    @media (max-width: 768px) {
+      #gallery .gallery-text-wrap .gallery-heading {
+        margin-bottom: 25px; } }
   #gallery .gallery-text-wrap .gallery-paragraph {
     margin-bottom: 58px; }
+    @media (max-width: 1065px) {
+      #gallery .gallery-text-wrap .gallery-paragraph {
+        margin-bottom: 50px; } }
+    @media (max-width: 768px) {
+      #gallery .gallery-text-wrap .gallery-paragraph {
+        margin-bottom: 45px; } }
   #gallery .portfolio-wrap {
     border-top: 1px solid #94b963;
     border-bottom: 1px solid #94b963;
@@ -582,12 +603,29 @@ p {
       line-height: 24px;
       text-transform: uppercase;
       margin: 42px 0; }
+      @media (max-width: 700px) {
+        #gallery .portfolio-wrap .portfolio-text {
+          float: none;
+          text-align: center;
+          margin: 20px 0; } }
     #gallery .portfolio-wrap .portfolio-list {
       float: right; }
+      @media (max-width: 700px) {
+        #gallery .portfolio-wrap .portfolio-list {
+          float: none;
+          text-align: center; } }
       #gallery .portfolio-wrap .portfolio-list .portfolio-list-item {
         float: left;
         display: block;
         margin: 42px 16px; }
+        @media (max-width: 700px) {
+          #gallery .portfolio-wrap .portfolio-list .portfolio-list-item {
+            float: none;
+            display: inline-block;
+            margin: 20px 10px; } }
+        @media (max-width: 529px) {
+          #gallery .portfolio-wrap .portfolio-list .portfolio-list-item {
+            display: block; } }
       #gallery .portfolio-wrap .portfolio-list .portfolio-list-link {
         font-size: 16px;
         font-weight: 700;
