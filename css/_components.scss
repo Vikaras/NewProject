@@ -11,6 +11,14 @@
   line-height: $heading-text-lh;
   text-transform: $heading-upper;
   text-align: $heading-align;
+  @media (max-width: 1065px) {
+    font-size: 50px;
+    line-height: 48px;
+  }
+  @media (max-width: 600px) {
+    font-size: 45px;
+    line-height: 43px;
+  }
 }
 
 .paragraph {
@@ -29,12 +37,26 @@
   align-content: center;
   align-items: center;
   width: 100%;
+  @media (max-width: 600px) {
+    flex-direction: column;
+  }
 }
 
 .column {
-
+  @media (max-width: 900px) {
+    margin: 2% 2%;
+  }
+  @media (max-width: 600px) {
+    margin: 4% 2%;
+  }
   &.one-fourth {
     width: 23.5%;
+    @media (max-width: 900px) {
+      width: 46%;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+    }
   }
 
   &.one-third {

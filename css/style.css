@@ -45,6 +45,14 @@ p {
   line-height: 58px;
   text-transform: uppercase;
   text-align: center; }
+  @media (max-width: 1065px) {
+    .heading {
+      font-size: 50px;
+      line-height: 48px; } }
+  @media (max-width: 600px) {
+    .heading {
+      font-size: 45px;
+      line-height: 43px; } }
 
 .paragraph {
   color: #fff;
@@ -61,9 +69,24 @@ p {
   align-content: center;
   align-items: center;
   width: 100%; }
+  @media (max-width: 600px) {
+    .row {
+      flex-direction: column; } }
 
+@media (max-width: 900px) {
+  .column {
+    margin: 2% 2%; } }
+@media (max-width: 600px) {
+  .column {
+    margin: 4% 2%; } }
 .column.one-fourth {
   width: 23.5%; }
+  @media (max-width: 900px) {
+    .column.one-fourth {
+      width: 46%; } }
+  @media (max-width: 600px) {
+    .column.one-fourth {
+      width: 100%; } }
 .column.one-third {
   width: 32%; }
 .column.one-half {
@@ -316,20 +339,50 @@ p {
   background: #b24a50 url("../img/services-layer.png") no-repeat top center;
   background-size: cover;
   padding: 190px 0 124px; }
+  @media (max-width: 1200px) {
+    #service {
+      padding: 140px 20px; } }
+  @media (max-width: 768px) {
+    #service {
+      padding: 120px 20px; } }
+  @media (max-width: 600px) {
+    #service {
+      padding: 100px 40px; } }
   #service .service-column {
     border-radius: 5px;
     background: #c45158; }
   #service .service-text-wrap .service-heading {
     margin-bottom: 46px; }
+    @media (max-width: 1065px) {
+      #service .service-text-wrap .service-heading {
+        margin-bottom: 40px; } }
+    @media (max-width: 768px) {
+      #service .service-text-wrap .service-heading {
+        margin-bottom: 35px; } }
   #service .service-text-wrap .service-text {
     font-size: 20px;
     text-transform: uppercase;
     line-height: 58px;
     text-align: center; }
+    @media (max-width: 1065px) {
+      #service .service-text-wrap .service-text {
+        font-size: 18px;
+        line-height: 48px;
+        margin-bottom: 20px; } }
+    @media (max-width: 963px) {
+      #service .service-text-wrap .service-text {
+        font-size: 16px;
+        line-height: 32px; } }
   #service .service-text-wrap .service-text-link {
     color: #ec9da2; }
   #service .service-text-wrap .service-paragraph {
     margin-bottom: 120px; }
+    @media (max-width: 1065px) {
+      #service .service-text-wrap .service-paragraph {
+        margin-bottom: 100px; } }
+    @media (max-width: 768px) {
+      #service .service-text-wrap .service-paragraph {
+        margin-bottom: 80px; } }
   #service .service-row .service-column .service-wrap {
     position: relative;
     background: #ffffff;
@@ -370,9 +423,27 @@ p {
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 51px; }
+    @media (max-width: 1065px) {
+      #service .service-row .service-column .service-feature-heading {
+        font-size: 26px;
+        margin-bottom: 45px; } }
+    @media (max-width: 768px) {
+      #service .service-row .service-column .service-feature-heading {
+        margin-bottom: 40px; } }
+    @media (max-width: 600px) {
+      #service .service-row .service-column .service-feature-heading {
+        margin-bottom: 35px; } }
   #service .service-row .service-column .service-paragraph {
     margin-bottom: 43px;
     padding: 0 26px; }
+    @media (max-width: 1065px) {
+      #service .service-row .service-column .service-paragraph {
+        margin-bottom: 40px;
+        padding: 0 20px; } }
+    @media (max-width: 768px) {
+      #service .service-row .service-column .service-paragraph {
+        margin-bottom: 35px;
+        padding: 0 17px; } }
 
 #about {
   position: relative;
