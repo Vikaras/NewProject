@@ -3,18 +3,47 @@
   background: #75b4aa url("../img/contact-layer.png") no-repeat top center;
   background-size: cover;
   padding: 191px 0 231px;
+  @media (max-width: 1200px) {
+    padding: 140px 20px;
+  }
+  @media (max-width: 768px) {
+    padding: 120px 20px;
+  }
+  @media (max-width: 600px) {
+    padding: 100px 40px;
+  }
 
   .contact-text-wrap {
 
     .contact-heading {
       margin-bottom: 34px;
+      @media (max-width: 1065px) {
+        margin-bottom: 30px;
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 25px;
+      }
     }
 
     .contact-paragraph {
       margin-bottom: 122px;
+      @media (max-width: 1065px) {
+        margin-bottom: 100px;
+      }
+      @media (max-width: 768px) {
+        margin-bottom: 80px;
+      }
     }
   }
+
   .contact-row {
+    @media (max-width: 1150px) {
+      flex-direction: column;
+      content: '';
+      display: block;
+      clear: both;
+      padding: 0 25% 5%;
+    }
 
     .contact-heading-info {
       font-size: 30px;
@@ -25,6 +54,11 @@
 
     .contact-column-1 {
       width: 19.5%;
+      @media (max-width: 1150px) {
+        float: left;
+        width: 50%;
+        padding-bottom: 30px;
+      }
 
       .company-name {
         font-size: 20px;
@@ -65,17 +99,30 @@
     }
     .contact-column-map {
       margin-left: 4%;
-      padding-top: 52px;
+      padding-top: 55px;
+      @media (max-width: 1150px) {
+        float: right;
+        margin-left: 0%;
+        width: 50%;
+        padding-bottom: 30px;
+      }
       #map {
         width: 260px;
         height: 240px;
         border-radius: 5px;
+        @media (max-width: 1150px) {
+          width: 275px;
+        }
       }
     }
 
     .contact-half-column {
       position: relative;
       margin-left: 4%;
+      @media (max-width: 1150px) {
+        margin-left: 0;
+        width: 100%;
+      }
 
       #contact-form {
         display: flex;

@@ -696,10 +696,38 @@ p {
   background: #75b4aa url("../img/contact-layer.png") no-repeat top center;
   background-size: cover;
   padding: 191px 0 231px; }
+  @media (max-width: 1200px) {
+    #contact {
+      padding: 140px 20px; } }
+  @media (max-width: 768px) {
+    #contact {
+      padding: 120px 20px; } }
+  @media (max-width: 600px) {
+    #contact {
+      padding: 100px 40px; } }
   #contact .contact-text-wrap .contact-heading {
     margin-bottom: 34px; }
+    @media (max-width: 1065px) {
+      #contact .contact-text-wrap .contact-heading {
+        margin-bottom: 30px; } }
+    @media (max-width: 768px) {
+      #contact .contact-text-wrap .contact-heading {
+        margin-bottom: 25px; } }
   #contact .contact-text-wrap .contact-paragraph {
     margin-bottom: 122px; }
+    @media (max-width: 1065px) {
+      #contact .contact-text-wrap .contact-paragraph {
+        margin-bottom: 100px; } }
+    @media (max-width: 768px) {
+      #contact .contact-text-wrap .contact-paragraph {
+        margin-bottom: 80px; } }
+  @media (max-width: 1150px) {
+    #contact .contact-row {
+      flex-direction: column;
+      content: '';
+      display: block;
+      clear: both;
+      padding: 0 25% 5%; } }
   #contact .contact-row .contact-heading-info {
     font-size: 30px;
     font-weight: 300;
@@ -707,6 +735,11 @@ p {
     margin-bottom: 27px; }
   #contact .contact-row .contact-column-1 {
     width: 19.5%; }
+    @media (max-width: 1150px) {
+      #contact .contact-row .contact-column-1 {
+        float: left;
+        width: 50%;
+        padding-bottom: 30px; } }
     #contact .contact-row .contact-column-1 .company-name {
       font-size: 20px;
       font-weight: 700;
@@ -732,14 +765,27 @@ p {
       color: #ffffff; }
   #contact .contact-row .contact-column-map {
     margin-left: 4%;
-    padding-top: 52px; }
+    padding-top: 55px; }
+    @media (max-width: 1150px) {
+      #contact .contact-row .contact-column-map {
+        float: right;
+        margin-left: 0%;
+        width: 50%;
+        padding-bottom: 30px; } }
     #contact .contact-row .contact-column-map #map {
       width: 260px;
       height: 240px;
       border-radius: 5px; }
+      @media (max-width: 1150px) {
+        #contact .contact-row .contact-column-map #map {
+          width: 275px; } }
   #contact .contact-row .contact-half-column {
     position: relative;
     margin-left: 4%; }
+    @media (max-width: 1150px) {
+      #contact .contact-row .contact-half-column {
+        margin-left: 0;
+        width: 100%; } }
     #contact .contact-row .contact-half-column #contact-form {
       display: flex;
       flex-direction: column; }
