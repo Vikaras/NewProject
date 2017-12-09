@@ -100,7 +100,7 @@ p {
   width: 100%;
   background: rgba(0, 0, 0, 0.2);
   z-index: 10; }
-  @media (max-width: 500px) {
+  @media (max-width: 750px) {
     #header-nav {
       display: none; } }
   #header-nav .company-logo {
@@ -736,6 +736,12 @@ p {
       #contact .contact-row .contact-column-1 {
         width: 50%;
         margin-bottom: 30px; } }
+    @media (max-width: 900px) {
+      #contact .contact-row .contact-column-1 {
+        margin: 0 0 30px; } }
+    @media (max-width: 601px) {
+      #contact .contact-row .contact-column-1 {
+        width: 100%; } }
     #contact .contact-row .contact-column-1 .company-name {
       font-size: 20px;
       font-weight: 700;
@@ -767,6 +773,10 @@ p {
         margin: 0 0 30px;
         padding-left: 10px;
         width: 50%; } }
+    @media (max-width: 601px) {
+      #contact .contact-row .contact-column-map {
+        width: 100%;
+        padding: 0; } }
     #contact .contact-row .contact-column-map #map {
       width: 260px;
       height: 240px;
@@ -781,17 +791,29 @@ p {
       #contact .contact-row .contact-half-column {
         margin-left: 0;
         width: 100%; } }
+    @media (max-width: 900px) {
+      #contact .contact-row .contact-half-column {
+        margin: 0; } }
     #contact .contact-row .contact-half-column #contact-form {
       display: flex;
       flex-direction: column; }
       #contact .contact-row .contact-half-column #contact-form .contacts-input-wrap {
         display: flex;
         justify-content: space-between; }
+        @media (max-width: 601px) {
+          #contact .contact-row .contact-half-column #contact-form .contacts-input-wrap {
+            flex-direction: column; } }
         #contact .contact-row .contact-half-column #contact-form .contacts-input-wrap .contact-input {
           width: 50%;
           margin-bottom: 20px; }
+          @media (max-width: 601px) {
+            #contact .contact-row .contact-half-column #contact-form .contacts-input-wrap .contact-input {
+              width: 100%; } }
           #contact .contact-row .contact-half-column #contact-form .contacts-input-wrap .contact-input + .contact-input {
             margin-left: 20px; }
+            @media (max-width: 601px) {
+              #contact .contact-row .contact-half-column #contact-form .contacts-input-wrap .contact-input + .contact-input {
+                margin-left: 0; } }
       #contact .contact-row .contact-half-column #contact-form #contact-textarea {
         width: 100%;
         height: 169px;
@@ -826,6 +848,13 @@ p {
         text-transform: uppercase;
         padding: 13px 0 16px;
         cursor: pointer; }
+        @media (max-width: 1150px) {
+          #contact .contact-row .contact-half-column #contact-form .btn {
+            left: 26%; } }
+        @media (max-width: 601px) {
+          #contact .contact-row .contact-half-column #contact-form .btn {
+            width: 100%;
+            left: 0; } }
         #contact .contact-row .contact-half-column #contact-form .btn:hover {
           background: #ffffff;
           color: #df5c64;

@@ -54,6 +54,12 @@
         width: 50%;
         margin-bottom: 30px;
       }
+      @media (max-width: 900px) {
+        margin: 0 0 30px;
+      }
+      @media (max-width: 601px) {
+        width: 100%;
+      }
 
       .company-name {
         font-size: 20px;
@@ -100,6 +106,10 @@
         padding-left: 10px;
         width: 50%;
       }
+      @media (max-width: 601px) {
+        width: 100%;
+        padding: 0;
+      }
       #map {
         width: 260px;
         height: 240px;
@@ -117,6 +127,9 @@
         margin-left: 0;
         width: 100%;
       }
+      @media (max-width: 900px) {
+        margin: 0;
+      }
 
       #contact-form {
         display: flex;
@@ -125,12 +138,21 @@
         .contacts-input-wrap {
           display: flex;
           justify-content: space-between;
+          @media (max-width: 601px) {
+            flex-direction: column;
+          }
 
           .contact-input {
             width: 50%;
             margin-bottom: 20px;
+            @media (max-width: 601px) {
+              width: 100%;
+            }
             & + .contact-input {
               margin-left: 20px;
+              @media (max-width: 601px) {
+                margin-left: 0;
+              }
             }
           }
         }
@@ -173,6 +195,13 @@
           text-transform: uppercase;
           padding: 13px 0 16px;
           cursor: pointer;
+          @media (max-width: 1150px) {
+            left: 26%;
+          }
+          @media (max-width: 601px) {
+            width: 100%;
+            left: 0;
+          }
           &:hover {
             background: #ffffff;
             color: #df5c64;
