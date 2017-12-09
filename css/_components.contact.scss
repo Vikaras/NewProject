@@ -38,13 +38,9 @@
 
   .contact-row {
     @media (max-width: 1150px) {
-      flex-direction: column;
-      content: '';
-      display: block;
-      clear: both;
-      padding: 0 25% 5%;
+      max-width: 800px;
+      margin: 0 auto;
     }
-
     .contact-heading-info {
       font-size: 30px;
       font-weight: $heading-text-weight;
@@ -55,9 +51,8 @@
     .contact-column-1 {
       width: 19.5%;
       @media (max-width: 1150px) {
-        float: left;
         width: 50%;
-        padding-bottom: 30px;
+        margin-bottom: 30px;
       }
 
       .company-name {
@@ -101,17 +96,16 @@
       margin-left: 4%;
       padding-top: 55px;
       @media (max-width: 1150px) {
-        float: right;
-        margin-left: 0%;
+        margin: 0 0 30px;
+        padding-left: 10px;
         width: 50%;
-        padding-bottom: 30px;
       }
       #map {
         width: 260px;
         height: 240px;
         border-radius: 5px;
         @media (max-width: 1150px) {
-          width: 275px;
+          width: 100%;
         }
       }
     }

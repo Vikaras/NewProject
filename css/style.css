@@ -723,11 +723,8 @@ p {
         margin-bottom: 80px; } }
   @media (max-width: 1150px) {
     #contact .contact-row {
-      flex-direction: column;
-      content: '';
-      display: block;
-      clear: both;
-      padding: 0 25% 5%; } }
+      max-width: 800px;
+      margin: 0 auto; } }
   #contact .contact-row .contact-heading-info {
     font-size: 30px;
     font-weight: 300;
@@ -737,9 +734,8 @@ p {
     width: 19.5%; }
     @media (max-width: 1150px) {
       #contact .contact-row .contact-column-1 {
-        float: left;
         width: 50%;
-        padding-bottom: 30px; } }
+        margin-bottom: 30px; } }
     #contact .contact-row .contact-column-1 .company-name {
       font-size: 20px;
       font-weight: 700;
@@ -768,17 +764,16 @@ p {
     padding-top: 55px; }
     @media (max-width: 1150px) {
       #contact .contact-row .contact-column-map {
-        float: right;
-        margin-left: 0%;
-        width: 50%;
-        padding-bottom: 30px; } }
+        margin: 0 0 30px;
+        padding-left: 10px;
+        width: 50%; } }
     #contact .contact-row .contact-column-map #map {
       width: 260px;
       height: 240px;
       border-radius: 5px; }
       @media (max-width: 1150px) {
         #contact .contact-row .contact-column-map #map {
-          width: 275px; } }
+          width: 100%; } }
   #contact .contact-row .contact-half-column {
     position: relative;
     margin-left: 4%; }
