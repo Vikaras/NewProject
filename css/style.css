@@ -889,5 +889,11 @@ p {
       border-radius: 50%;
       font-size: 30px;
       transition: background-color .3s; }
+      @media (max-width: 768px) {
+        #footer-nav .footer-list .footer-list-link {
+          width: 50px;
+          height: 50px;
+          line-height: 50px;
+          font-size: 25px; } }
 
 /*# sourceMappingURL=style.css.map */
