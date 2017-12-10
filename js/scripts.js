@@ -1,5 +1,5 @@
 // Google maps JS
-function initMap() {
+function initMap () {
   var uluru = {lat: 51.3450, lng: 0.1317}
   var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 4,
@@ -11,47 +11,66 @@ function initMap() {
   })
 }
 
+// hamburger menu
+$(document).ready(function () {
+  $('.cross').hide()
+  $('.menu').hide()
+  $('.hamburger').click(function () {
+    $('.menu').slideToggle('slow', function () {
+      $('.hamburger').hide()
+      $('.cross').show()
+    })
+  })
+
+  $('.cross ') .click(function () {
+    $('.menu').slideToggle('slow', function () {
+      $('.cross').hide()
+      $('.hamburger').show()
+    })
+  })
+})
+
 // Carousel Js
 $(document).ready(function () {
-  $('.slider').bxSlider();
+  $('.slider').bxSlider()
 
-  $(document).on("scroll", onScroll);
+  $(document).on('scroll', onScroll)
 
-  //smoothscroll
+  // smoothscroll
   $('.nav-list li a').on('click', function (e) {
-    e.preventDefault();
-    $(document).off("scroll");
+    e.preventDefault()
+    $(document).off('scroll')
 
     $('a').each(function () {
-      $(this).removeClass('active');
+      $(this).removeClass('active')
     })
-    $(this).addClass('active');
+    $(this).addClass('active')
 
     var target = this.hash,
-      menu = target;
+      menu = target
 
-    $target = $(target);
+    $target = $(target)
     $('html, body').stop().animate({
       'scrollTop': $target.offset().top + 2
     }, 500, 'swing', function () {
-      window.location.hash = target;
-      $(document).on("scroll", onScroll);
-    });
-  });
-});
+      window.location.hash = target
+      $(document).on('scroll', onScroll)
+    })
+  })
+})
 
-function onScroll(event) {
-  var scrollPos = $(document).scrollTop();
+function onScroll (event) {
+  var scrollPos = $(document).scrollTop()
   $('.nav-list li a').each(function () {
-    var currLink = $(this);
-    var refElement = $(currLink.attr("href"));
+    var currLink = $(this)
+    var refElement = $(currLink.attr('href'))
     if (refElement.position().top <= scrollPos && refElement.position().top + refElement.outerHeight(true) > scrollPos) {
-      $('.nav-list li a').removeClass("active");
-      currLink.addClass("active");
+      $('.nav-list li a').removeClass('active')
+      currLink.addClass('active')
     } else {
-      currLink.removeClass("active");
+      currLink.removeClass('active')
     }
-  });
+  })
 }
 
 // Form
@@ -59,7 +78,7 @@ function onScroll(event) {
 (function () {
   'use strict'
 
-  function qs(selector) {
+  function qs (selector) {
     return document.querySelector(selector)
   }
 
@@ -106,20 +125,20 @@ function onScroll(event) {
 
 jQuery('document').ready(function ($) {
   $('.gallery-filters li').on('click', function () {
-    $('.gallery-filters li').removeClass('active');
-    $(this).addClass('active');
-    filter = $(this).attr('data-gallery-filter');
+    $('.gallery-filters li').removeClass('active')
+    $(this).addClass('active')
+    filter = $(this).attr('data-gallery-filter')
 
     $('.gallery-column').each(function () {
       if (filter == 'all') {
-        $(this).fadeIn();
+        $(this).fadeIn()
       } else {
-        $(this).hide();
+        $(this).hide()
         if ($(this).attr('data-filter-category') == filter) {
-          $(this).fadeIn();
+          $(this).fadeIn()
         }
       }
-    });
+    })
     return false
-  });
-});
+  })
+})
