@@ -7,6 +7,9 @@
   @media (max-width: 1200px) {
     padding: 0 20px;
   }
+  @media (max-width: 800px) {
+    padding: 0;
+  }
 
   .company-logo {
     float: left;
@@ -18,49 +21,46 @@
       display: block;
       clear: both;
     }
+    @media (max-width: 800px) {
+      float: none;
+      display: block;
+      text-align: center;
+    }
   }
+
   .btn-wrap {
     display: none;
     @media (max-width: 800px) {
       display: block;
-      .hamburger {
-        background: none;
-        position: absolute;
-        top: 0;
-        right: 0;
-        line-height: 45px;
-        padding: 5px 15px 0px 15px;
-        color: #ffffff;
-        border: 0;
-        font-size: 1.4em;
-        font-weight: bold;
-        cursor: pointer;
-        outline: none;
-        z-index: 10000000000000;
-      }
-
+      .hamburger,
       .cross {
         background: none;
         position: absolute;
-        top: 0;
-        right: 0;
-        padding: 7px 15px 0px 15px;
+        top: 25%;
+        right: 1%;
+        padding: 5px 15px 0px 15px;
         color: #ffffff;
         border: 0;
-        font-size: 3em;
-        line-height: 65px;
+        font-size: 22px;
         font-weight: bold;
         cursor: pointer;
         outline: none;
-        z-index: 10000000000000;
+        z-index: 100;
+      }
+
+      .cross {
+        font-size: 36px;
       }
     }
   }
 
   .menu {
-    z-index: 10000000000000;
+    z-index: 100;
     text-align: center;
     width: 100%;
+    @media (max-width: 800px) {
+      display: none;
+    }
 
     .nav-list {
       float: right;
@@ -69,12 +69,25 @@
         display: block;
         clear: both;
       }
+      @media (max-width: 800px) {
+        float: none;
+        background: #ffffff;
+      }
 
       .nav-list-item {
         float: left;
         margin: 42px 5px 0;
         display: block;
         font-size: 18px;
+        @media (max-width: 800px) {
+          float: none;
+          margin: 0;
+          border-bottom: 1px solid #000000;
+          &:nth-of-type(1) {
+            margin-top: 18px;
+            border-top: 1px solid #000000;
+          }
+        }
 
         .nav-list-link {
           color: $text-color;
@@ -82,6 +95,12 @@
           border-bottom-left-radius: 5px;
           border-bottom-right-radius: 5px;
           transition: .3s;
+          @media (max-width: 800px) {
+            border-radius: 0;
+            padding: 15px;
+            color: #000000;
+            display: block;
+          }
         }
 
         &:nth-child(1) .nav-list-link:hover,
